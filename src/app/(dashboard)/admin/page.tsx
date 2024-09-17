@@ -31,19 +31,24 @@ const page = () => {
                     
                     {/* MIDDLE CHARTS */}
                     <div className="flex gap-4 flex-col lg:flex-row">
+
                         {/* COUNT CHART */}
                         <div className="w-full lg:w-1/3 h-[450px]">
                             <CountChart></CountChart>
                         </div>
+
                         {/* ATTENDANCE CHART */}
                         <div className="w-full lg:w-2/3 h-[450px]">
                             <AttendanceChart></AttendanceChart>
                         </div>
+
                     </div>
+
                     {/* BOTTOM CHART */}
                     <div className="w-full h-[500px]">
                         {/* <FinanceChart /> */}
                     </div>
+                    
                 </div>
 
                 {/* RIGHT */}
