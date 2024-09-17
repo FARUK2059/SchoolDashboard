@@ -1,4 +1,5 @@
 import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +22,10 @@ export default function DashboardLayout({
                 </div>
 
                 {/* Right Section */}
-                <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-gradient-to-r from-[#bdc2e8] to-[#e6dee9] overflow-scroll">R</div>
+                <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-gradient-to-r from-[#bdc2e8] to-[#e6dee9] overflow-scroll">
+                    <Navbar></Navbar>
+                    {children}
+                </div>
 
             </div>
         </div>
