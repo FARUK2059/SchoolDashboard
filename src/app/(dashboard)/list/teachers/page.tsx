@@ -86,6 +86,10 @@ const page = () => {
                             <Image src="/view.png" alt="" width={16} height={16} />
                         </button>
                     </Link>
+                    <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+                        <Image src="/delete.png" alt="" width={16} height={16} />
+                    </button>
+
                     {/* {role === "admin" && (
                         // <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
                         //   <Image src="/delete.png" alt="" width={16} height={16} />
@@ -93,7 +97,7 @@ const page = () => {
                         <FormModal table="teacher" type="delete" id={item.id} />
                     )} */}
                 </div>
-                
+
             </td>
         </tr>
     );
@@ -122,10 +126,13 @@ const page = () => {
                     </div>
                 </div>
             </div>
+
             {/* LIST */}
             <Table columns={columns} renderRow={renderRow} data={teachersData} />
+
             {/* PAGINATION */}
             <Pagination />
+
         </div>
     );
 };
