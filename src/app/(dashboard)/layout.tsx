@@ -22,7 +22,7 @@ export default function DashboardLayout({
                 </div>
 
                 {/* Right Section */}
-                <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-gradient-to-r from-[#bdc2e8] to-[#e6dee9] overflow-scroll">
+                <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-gradient-to-r from-[#bdc2e8] to-[#e6dee9] overflow-scroll flex flex-col">
                     <Navbar></Navbar>
                     {children}
                 </div>
