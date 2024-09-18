@@ -1,5 +1,6 @@
 import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
+import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
 
 
@@ -9,7 +10,8 @@ const page = () => {
         <div>
             <Pagination></Pagination>
             <TableSearch></TableSearch>
-            <FormModal></FormModal>
+            {/* <FormModal></FormModal> */}
+            {/* <Table ></Table> */}
         </div>
     );
 };
