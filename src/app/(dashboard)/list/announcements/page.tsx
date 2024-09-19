@@ -46,9 +46,8 @@ const pageAnnounce = () => {
                 <div className="flex items-center gap-2">
                     {role === "admin" && (
                         <>
-                        <p>Modal</p>
-                            {/* <FormModal table="announcement" type="update" data={item} />
-                            <FormModal table="announcement" type="delete" id={item.id} /> */}
+                            <FormModal table="announcement" type="update" data={item} />
+                            <FormModal table="announcement" type="delete" id={item.id} />
                         </>
                     )}
                 </div>
@@ -73,14 +72,14 @@ const pageAnnounce = () => {
                             <Image src="/sort.png" alt="" width={14} height={14} />
                         </button>
                         {role === "admin" && (
-                            // <FormModal table="announcement" type="create" />
-                            <p>Modal</p>
+                            <FormModal table="announcement" type="create" />
                         )}
                     </div>
                 </div>
             </div>
             {/* LIST */}
             <Table columns={columns} renderRow={renderRow} data={announcementsData} />
+
             {/* PAGINATION */}
             <Pagination />
         </div>
