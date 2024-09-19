@@ -4,7 +4,7 @@
 const page = () => {
     return (
         <div>
-            <p>This is Sign In Page</p>
+            <p>This Page is Sign Up</p>
         </div>
     );
 };
